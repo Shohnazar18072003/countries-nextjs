@@ -42,7 +42,7 @@ export default function SearchContextProvider(props:Props){
       if(!searchState.inputValue)return;
       const apiUrl = process.env.NODE_ENV === "development" ? 
       "http://localhost:3000" :
-      "https://rest-countries-api-with-theme-switcher-nelsonleone.vercel.app";
+      "https://countries-nextjs-delta.vercel.app";
 
       const setSearchApiFetch = async (value:string) => {
          try{
@@ -66,7 +66,7 @@ export default function SearchContextProvider(props:Props){
    useEffect(() => {
       const apiUrl = process.env.NODE_ENV === "development" ? 
       "http://localhost:3000" :
-      "https://rest-countries-api-with-theme-switcher-nelsonleone.vercel.app";
+      "https://countries-nextjs-delta.vercel.app";
 
       const setFilterApiFetch = async (filter:string) => {
          try{
